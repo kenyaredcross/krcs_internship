@@ -1,0 +1,21 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "15.74.2"
+    },
+    "krcs_internship": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "3c798c10269435f845e7c4443e0231409b0daac7",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    }
+}

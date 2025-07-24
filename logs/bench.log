@@ -1,0 +1,60 @@
+2025-07-23 11:56:26,607 DEBUG cd internship_app && python3 -m venv env
+2025-07-23 11:56:31,288 DEBUG cd internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-23 11:56:34,602 DEBUG cd internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet wheel
+2025-07-23 11:56:39,242 LOG Getting frappe
+2025-07-23 11:56:39,242 DEBUG cd internship_app/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-07-23 11:57:14,957 LOG Installing frappe
+2025-07-23 11:57:14,960 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/frappe 
+2025-07-23 11:58:34,337 DEBUG cd /home/ash/internship_app/apps/frappe && yarn install --check-files
+2025-07-23 11:59:06,177 DEBUG cd internship_app && bench build
+2025-07-23 11:59:06,922 INFO /home/ash/.local/bin/bench build
+2025-07-23 11:59:41,349 LOG setting up backups
+2025-07-23 11:59:41,370 LOG backups were set up
+2025-07-23 11:59:41,371 INFO Bench internship_app initialized
+2025-07-23 11:59:42,141 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 12:00:01,734 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-07-23 12:00:43,736 INFO /home/ash/.local/bin/bench get-app --local krcs_internship ./apps/krcs_internship
+2025-07-23 12:00:43,745 WARNING /home/ash/.local/bin/bench get-app --local krcs_internship ./apps/krcs_internship executed with exit code 2
+2025-07-23 12:00:46,266 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 12:02:33,928 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:03:08,767 INFO /home/ash/.local/bin/bench new-site internship.localhost
+2025-07-23 12:05:51,780 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:16:33,166 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:50:19,904 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:50:21,352 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-23 13:00:08,972 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 13:06:07,263 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-23 14:44:45,714 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-23 14:51:17,432 INFO /home/ash/.local/bin/bench remove-app krcs_internship
+2025-07-23 14:51:17,440 WARNING /home/ash/.local/bin/bench remove-app krcs_internship executed with exit code 1
+2025-07-23 14:51:18,171 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 14:51:55,555 INFO /home/ash/.local/bin/bench --site internship.localhost uninstall-app krcs_internship
+2025-07-23 14:53:52,209 INFO /home/ash/.local/bin/bench get-app https://github.com/kenyaredcross.or.ke/krcs_internship
+2025-07-23 14:53:52,220 LOG Getting krcs_internship
+2025-07-23 14:53:52,220 DEBUG cd ./apps && git clone https://github.com/kenyaredcross.or.ke/krcs_internship  --depth 1 --origin upstream
+2025-07-23 14:53:54,933 WARNING cd ./apps && git clone https://github.com/kenyaredcross.or.ke/krcs_internship  --depth 1 --origin upstream executed with exit code 128
+2025-07-23 14:53:54,934 WARNING /home/ash/.local/bin/bench get-app https://github.com/kenyaredcross.or.ke/krcs_internship executed with exit code 1
+2025-07-23 14:53:55,583 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 14:57:22,611 INFO /home/ash/.local/bin/bench get-app https://github.com/kenyaredcross/krcs_internship
+2025-07-23 14:57:22,626 LOG Getting krcs_internship
+2025-07-23 14:57:22,626 DEBUG cd ./apps && git clone https://github.com/kenyaredcross/krcs_internship  --depth 1 --origin upstream
+2025-07-23 14:57:24,384 LOG Installing krcs_internship
+2025-07-23 14:57:24,385 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/krcs_internship 
+2025-07-23 14:57:29,374 DEBUG bench build --app krcs_internship
+2025-07-23 14:57:29,548 INFO /home/ash/.local/bin/bench build --app krcs_internship
+2025-07-23 14:57:34,880 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 15:41:48,987 INFO /home/ash/.local/bin/bench get-app https://github.com/Ashlyne2001/krcs_internship
+2025-07-23 15:41:49,011 LOG Getting krcs_internship
+2025-07-23 15:41:49,011 DEBUG cd ./apps && git clone https://github.com/Ashlyne2001/krcs_internship  --depth 1 --origin upstream
+2025-07-23 15:41:51,201 LOG Installing krcs_internship
+2025-07-23 15:41:51,202 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/krcs_internship 
+2025-07-23 15:41:55,675 DEBUG bench build --app krcs_internship
+2025-07-23 15:41:55,858 INFO /home/ash/.local/bin/bench build --app krcs_internship
+2025-07-23 15:42:00,303 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 16:03:53,880 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 16:04:07,157 INFO /home/ash/.local/bin/bench start
+2025-07-23 16:04:07,955 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-07-23 16:04:07,999 INFO /home/ash/.local/bin/bench watch
+2025-07-23 16:04:08,030 INFO /home/ash/.local/bin/bench worker
+2025-07-23 16:04:08,040 INFO /home/ash/.local/bin/bench schedule
+2025-07-23 16:17:57,010 INFO /home/ash/.local/bin/bench set-config -g developer_mode true
