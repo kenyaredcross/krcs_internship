@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{DD/MM/YY}",
  "creation": "2025-05-23 16:56:26.219426",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -77,10 +78,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-23 16:25:54.701286",
+ "modified": "2025-07-24 09:32:02.174060",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Intern Activities",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

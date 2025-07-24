@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class PhysicalAsset(Document):
+class AssetInventory(Document):
 	pass

@@ -2750,3 +2750,47 @@ ALTER TABLE `tabIntern Activities` ADD COLUMN `activity` varchar(140), ADD COLUM
 ALTER TABLE `tabIntern Activities` ADD INDEX `creation`(`creation`)
 2025-07-23 16:25:54,970 WARNING database DDL Query made to DB:
 ALTER TABLE `tabIntern Activities` ADD COLUMN `_user_tags` text, ADD COLUMN `_comments` text, ADD COLUMN `_assign` text, ADD COLUMN `_liked_by` text, ADD COLUMN `_seen` text
+2025-07-24 09:11:19,111 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProject` ADD UNIQUE INDEX IF NOT EXISTS name_of_project (`name_of_project`)
+2025-07-24 09:11:19,219 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProject` ADD INDEX `creation`(`creation`)
+2025-07-24 09:59:17,611 WARNING database DDL Query made to DB:
+create table `tabAsset Inventory` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-24 10:10:54,959 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Inventory` ADD COLUMN `item_code` varchar(140), ADD COLUMN `date_received` date, ADD COLUMN `name_of_item` varchar(140), ADD COLUMN `model` varchar(140), ADD COLUMN `serial_number` varchar(140), ADD COLUMN `deprtments` varchar(140), ADD COLUMN `unit_measures` varchar(140), ADD COLUMN `quantity_measures` varchar(140), ADD COLUMN `category` varchar(140), ADD COLUMN `asset_location` varchar(140), ADD COLUMN `notes` text
+2025-07-24 10:16:08,556 WARNING database DDL Query made to DB:
+create table `tabAsset Tracker` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-24 10:35:51,722 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Tracker` ADD COLUMN `staff_collecting` varchar(140), ADD COLUMN `action` varchar(140), ADD COLUMN `asset_inentory` varchar(140), ADD COLUMN `condition_issued` varchar(140), ADD COLUMN `date_issued` date, ADD COLUMN `date_returned` date, ADD COLUMN `purpose_destination` varchar(140), ADD COLUMN `remarks` longtext

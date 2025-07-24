@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:name_of_project",
  "creation": "2025-05-23 17:02:04.538277",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,7 +14,8 @@
   {
    "fieldname": "name_of_project",
    "fieldtype": "Data",
-   "label": "Name of Project"
+   "label": "Name of Project",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -31,10 +33,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-26 11:27:14.874315",
+ "modified": "2025-07-24 09:11:18.731422",
  "modified_by": "Administrator",
  "module": "Krcs Internship",
  "name": "Project",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
