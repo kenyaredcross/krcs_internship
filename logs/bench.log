@@ -1,0 +1,176 @@
+2025-07-23 11:56:26,607 DEBUG cd internship_app && python3 -m venv env
+2025-07-23 11:56:31,288 DEBUG cd internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-23 11:56:34,602 DEBUG cd internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet wheel
+2025-07-23 11:56:39,242 LOG Getting frappe
+2025-07-23 11:56:39,242 DEBUG cd internship_app/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-07-23 11:57:14,957 LOG Installing frappe
+2025-07-23 11:57:14,960 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/frappe 
+2025-07-23 11:58:34,337 DEBUG cd /home/ash/internship_app/apps/frappe && yarn install --check-files
+2025-07-23 11:59:06,177 DEBUG cd internship_app && bench build
+2025-07-23 11:59:06,922 INFO /home/ash/.local/bin/bench build
+2025-07-23 11:59:41,349 LOG setting up backups
+2025-07-23 11:59:41,370 LOG backups were set up
+2025-07-23 11:59:41,371 INFO Bench internship_app initialized
+2025-07-23 11:59:42,141 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 12:00:01,734 INFO /home/ash/.local/bin/bench --verbose --site all backup
+2025-07-23 12:00:43,736 INFO /home/ash/.local/bin/bench get-app --local krcs_internship ./apps/krcs_internship
+2025-07-23 12:00:43,745 WARNING /home/ash/.local/bin/bench get-app --local krcs_internship ./apps/krcs_internship executed with exit code 2
+2025-07-23 12:00:46,266 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 12:02:33,928 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:03:08,767 INFO /home/ash/.local/bin/bench new-site internship.localhost
+2025-07-23 12:05:51,780 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:16:33,166 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:50:19,904 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 12:50:21,352 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-23 13:00:08,972 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 13:06:07,263 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-23 14:44:45,714 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-23 14:51:17,432 INFO /home/ash/.local/bin/bench remove-app krcs_internship
+2025-07-23 14:51:17,440 WARNING /home/ash/.local/bin/bench remove-app krcs_internship executed with exit code 1
+2025-07-23 14:51:18,171 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 14:51:55,555 INFO /home/ash/.local/bin/bench --site internship.localhost uninstall-app krcs_internship
+2025-07-23 14:53:52,209 INFO /home/ash/.local/bin/bench get-app https://github.com/kenyaredcross.or.ke/krcs_internship
+2025-07-23 14:53:52,220 LOG Getting krcs_internship
+2025-07-23 14:53:52,220 DEBUG cd ./apps && git clone https://github.com/kenyaredcross.or.ke/krcs_internship  --depth 1 --origin upstream
+2025-07-23 14:53:54,933 WARNING cd ./apps && git clone https://github.com/kenyaredcross.or.ke/krcs_internship  --depth 1 --origin upstream executed with exit code 128
+2025-07-23 14:53:54,934 WARNING /home/ash/.local/bin/bench get-app https://github.com/kenyaredcross.or.ke/krcs_internship executed with exit code 1
+2025-07-23 14:53:55,583 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 14:57:22,611 INFO /home/ash/.local/bin/bench get-app https://github.com/kenyaredcross/krcs_internship
+2025-07-23 14:57:22,626 LOG Getting krcs_internship
+2025-07-23 14:57:22,626 DEBUG cd ./apps && git clone https://github.com/kenyaredcross/krcs_internship  --depth 1 --origin upstream
+2025-07-23 14:57:24,384 LOG Installing krcs_internship
+2025-07-23 14:57:24,385 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/krcs_internship 
+2025-07-23 14:57:29,374 DEBUG bench build --app krcs_internship
+2025-07-23 14:57:29,548 INFO /home/ash/.local/bin/bench build --app krcs_internship
+2025-07-23 14:57:34,880 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 15:41:48,987 INFO /home/ash/.local/bin/bench get-app https://github.com/Ashlyne2001/krcs_internship
+2025-07-23 15:41:49,011 LOG Getting krcs_internship
+2025-07-23 15:41:49,011 DEBUG cd ./apps && git clone https://github.com/Ashlyne2001/krcs_internship  --depth 1 --origin upstream
+2025-07-23 15:41:51,201 LOG Installing krcs_internship
+2025-07-23 15:41:51,202 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/krcs_internship 
+2025-07-23 15:41:55,675 DEBUG bench build --app krcs_internship
+2025-07-23 15:41:55,858 INFO /home/ash/.local/bin/bench build --app krcs_internship
+2025-07-23 15:42:00,303 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-23 16:03:53,880 INFO /home/ash/.local/bin/bench --site internship.localhost install-app krcs_internship
+2025-07-23 16:04:07,157 INFO /home/ash/.local/bin/bench start
+2025-07-23 16:04:07,955 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-07-23 16:04:07,999 INFO /home/ash/.local/bin/bench watch
+2025-07-23 16:04:08,030 INFO /home/ash/.local/bin/bench worker
+2025-07-23 16:04:08,040 INFO /home/ash/.local/bin/bench schedule
+2025-07-23 16:17:57,010 INFO /home/ash/.local/bin/bench set-config -g developer_mode true
+2025-07-24 09:04:30,238 INFO /home/ash/.local/bin/bench start
+2025-07-24 14:36:35,213 INFO /home/ash/.local/bin/bench --site internship.localhost migrate
+2025-07-25 12:24:25,236 INFO /home/ash/.local/bin/bench start
+2025-07-25 12:39:01,959 INFO /home/ash/.local/bin/bench start
+2025-07-25 12:39:02,645 INFO /home/ash/.local/bin/bench watch
+2025-07-25 12:39:02,669 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-07-25 12:39:02,683 INFO /home/ash/.local/bin/bench worker
+2025-07-25 12:39:02,710 INFO /home/ash/.local/bin/bench schedule
+2025-07-25 12:42:03,090 INFO /home/ash/.local/bin/bench start
+2025-07-25 12:44:09,178 INFO /home/ash/.local/bin/bench start
+2025-07-25 12:44:09,670 INFO /home/ash/.local/bin/bench worker
+2025-07-25 12:44:09,692 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-07-25 12:44:09,699 INFO /home/ash/.local/bin/bench schedule
+2025-07-25 12:44:09,797 INFO /home/ash/.local/bin/bench watch
+2025-07-25 12:45:52,592 INFO /home/ash/.local/bin/bench start
+2025-07-25 12:45:53,243 INFO /home/ash/.local/bin/bench schedule
+2025-07-25 12:45:53,246 INFO /home/ash/.local/bin/bench watch
+2025-07-25 12:45:53,262 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-07-25 12:45:53,303 INFO /home/ash/.local/bin/bench worker
+2025-07-25 12:54:17,809 INFO /home/ash/.local/bin/bench get-app red_line
+2025-07-25 12:54:19,557 WARNING /home/ash/.local/bin/bench get-app red_line executed with exit code 1
+2025-07-25 12:54:20,176 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-07-25 12:58:38,709 INFO /home/ash/.local/bin/bench get-app https://github.com/kenyaredcross/red_line.git
+2025-07-25 12:58:38,719 LOG Getting red_line
+2025-07-25 12:58:38,719 DEBUG cd ./apps && git clone https://github.com/kenyaredcross/red_line.git  --depth 1 --origin upstream
+2025-07-25 12:59:52,508 INFO /home/ash/.local/bin/bench start
+2025-07-25 12:59:53,100 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-07-25 12:59:53,107 INFO /home/ash/.local/bin/bench schedule
+2025-07-25 12:59:53,118 INFO /home/ash/.local/bin/bench watch
+2025-07-25 12:59:53,188 INFO /home/ash/.local/bin/bench worker
+2025-07-25 13:01:55,737 INFO /home/ash/.local/bin/bench start
+2025-07-25 13:01:56,282 INFO /home/ash/.local/bin/bench schedule
+2025-07-25 13:01:56,308 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-07-25 13:01:56,310 INFO /home/ash/.local/bin/bench worker
+2025-07-25 13:01:56,365 INFO /home/ash/.local/bin/bench watch
+2025-08-04 09:48:34,824 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:05:50,328 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:12:50,542 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:15:48,475 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:21:54,560 INFO /home/ash/.local/bin/bench setup redis
+2025-08-04 10:21:54,602 WARNING /home/ash/.local/bin/bench setup redis executed with exit code 1
+2025-08-04 10:21:57,299 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:25:28,503 INFO /home/ash/.local/bin/bench setup redis
+2025-08-04 10:25:28,524 WARNING /home/ash/.local/bin/bench setup redis executed with exit code 1
+2025-08-04 10:25:29,280 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:25:29,537 INFO /home/ash/.local/bin/bench setup requirements
+2025-08-04 10:25:29,553 DEBUG /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade pip
+2025-08-04 10:25:37,264 LOG Installing frappe
+2025-08-04 10:25:37,269 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/frappe 
+2025-08-04 10:25:41,829 DEBUG cd /home/ash/internship_app/apps/frappe && yarn install --check-files
+2025-08-04 10:25:50,896 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:25:51,337 INFO /home/ash/.local/bin/bench build
+2025-08-04 10:26:40,679 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:32:03,868 INFO /home/ash/.local/bin/bench setup redis
+2025-08-04 10:32:03,888 WARNING /home/ash/.local/bin/bench setup redis executed with exit code 1
+2025-08-04 10:32:05,882 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:32:06,142 INFO /home/ash/.local/bin/bench setup requirements
+2025-08-04 10:32:06,148 DEBUG /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade pip
+2025-08-04 10:32:07,859 LOG Installing frappe
+2025-08-04 10:32:07,861 DEBUG cd /home/ash/internship_app && /home/ash/internship_app/env/bin/python -m pip install --quiet --upgrade -e /home/ash/internship_app/apps/frappe 
+2025-08-04 10:32:12,080 DEBUG cd /home/ash/internship_app/apps/frappe && yarn install --check-files
+2025-08-04 10:32:19,397 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:32:19,660 INFO /home/ash/.local/bin/bench build
+2025-08-04 10:32:50,823 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:33:10,417 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:34:40,028 INFO /home/ash/.local/bin/bench setup redis
+2025-08-04 10:34:40,048 WARNING /home/ash/.local/bin/bench setup redis executed with exit code 1
+2025-08-04 10:34:40,816 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:39:41,994 INFO /home/ash/.local/bin/bench build
+2025-08-04 10:40:41,368 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:40:42,180 INFO /home/ash/.local/bin/bench watch
+2025-08-04 10:40:42,275 INFO /home/ash/.local/bin/bench worker --queue long
+2025-08-04 10:40:42,277 INFO /home/ash/.local/bin/bench schedule
+2025-08-04 10:40:42,329 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-08-04 10:40:42,354 INFO /home/ash/.local/bin/bench worker --queue default
+2025-08-04 10:40:42,527 INFO /home/ash/.local/bin/bench worker --queue short
+2025-08-04 10:49:00,287 INFO /home/ash/.local/bin/bench restart
+2025-08-04 10:49:01,198 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:49:01,451 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:49:02,219 INFO /home/ash/.local/bin/bench watch
+2025-08-04 10:49:02,271 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-08-04 10:49:02,276 INFO /home/ash/.local/bin/bench worker --queue default
+2025-08-04 10:49:02,298 INFO /home/ash/.local/bin/bench worker --queue short
+2025-08-04 10:49:02,359 INFO /home/ash/.local/bin/bench worker --queue long
+2025-08-04 10:49:02,384 INFO /home/ash/.local/bin/bench schedule
+2025-08-04 10:51:25,708 INFO /home/ash/.local/bin/bench build
+2025-08-04 10:51:56,339 INFO /home/ash/.local/bin/bench clear-cache
+2025-08-04 10:51:57,585 INFO /home/ash/.local/bin/bench restart
+2025-08-04 10:51:58,542 INFO A newer version of bench is available: 5.25.1 → 5.25.9
+2025-08-04 10:51:58,826 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:51:59,857 INFO /home/ash/.local/bin/bench worker --queue short
+2025-08-04 10:51:59,983 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-08-04 10:52:00,081 INFO /home/ash/.local/bin/bench worker --queue default
+2025-08-04 10:52:00,165 INFO /home/ash/.local/bin/bench schedule
+2025-08-04 10:52:00,180 INFO /home/ash/.local/bin/bench worker --queue long
+2025-08-04 10:52:00,206 INFO /home/ash/.local/bin/bench watch
+2025-08-04 10:57:00,426 INFO /home/ash/.local/bin/bench clear-website-cache
+2025-08-04 10:57:01,186 INFO /home/ash/.local/bin/bench clear-cache
+2025-08-04 10:57:02,096 INFO /home/ash/.local/bin/bench build --force
+2025-08-04 10:58:12,479 INFO /home/ash/.local/bin/bench start
+2025-08-04 10:58:13,203 INFO /home/ash/.local/bin/bench worker --queue short
+2025-08-04 10:58:13,294 INFO /home/ash/.local/bin/bench worker --queue default
+2025-08-04 10:58:13,314 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-08-04 10:58:13,353 INFO /home/ash/.local/bin/bench worker --queue long
+2025-08-04 10:58:13,416 INFO /home/ash/.local/bin/bench watch
+2025-08-04 10:58:13,434 INFO /home/ash/.local/bin/bench schedule
+2025-08-04 11:02:02,394 INFO /home/ash/.local/bin/bench clear-website-cache
+2025-08-04 11:02:03,146 INFO /home/ash/.local/bin/bench clear-cache
+2025-08-04 11:02:03,863 INFO /home/ash/.local/bin/bench build --force
+2025-08-04 11:02:45,601 INFO /home/ash/.local/bin/bench start
+2025-08-04 11:02:46,288 INFO /home/ash/.local/bin/bench serve --port 8003
+2025-08-04 11:02:46,359 INFO /home/ash/.local/bin/bench worker --queue short
+2025-08-04 11:02:46,438 INFO /home/ash/.local/bin/bench worker --queue long
+2025-08-04 11:02:46,505 INFO /home/ash/.local/bin/bench schedule
+2025-08-04 11:02:46,579 INFO /home/ash/.local/bin/bench watch
+2025-08-04 11:02:46,597 INFO /home/ash/.local/bin/bench worker --queue default

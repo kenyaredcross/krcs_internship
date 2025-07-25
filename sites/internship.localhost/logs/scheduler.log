@@ -1,0 +1,9 @@
+2025-07-25 08:09:43,984 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for internship.localhost
+2025-07-25 08:09:44,029 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for internship.localhost
+2025-07-25 08:09:44,048 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for internship.localhost
+2025-07-25 08:09:44,051 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for internship.localhost
+2025-07-25 08:09:44,085 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for internship.localhost
+2025-07-25 08:09:44,095 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for internship.localhost
+2025-07-25 08:09:44,099 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for internship.localhost
+2025-07-25 08:09:44,107 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for internship.localhost
+2025-07-25 08:09:44,128 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for internship.localhost
