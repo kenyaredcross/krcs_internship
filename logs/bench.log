@@ -357,3 +357,4 @@
 2025-08-04 11:36:55,994 INFO /home/ash/.local/bin/bench worker --queue short
 2025-08-04 11:36:56,017 INFO /home/ash/.local/bin/bench serve --port 8003
 2025-08-04 11:36:56,049 INFO /home/ash/.local/bin/bench worker --queue long
+2025-08-04 17:19:35,104 INFO /home/ash/.local/bin/bench start
